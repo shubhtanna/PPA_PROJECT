@@ -1,7 +1,7 @@
 import { FaInstagram, FaDribbble, FaTwitter, FaYoutube } from 'react-icons/fa';
 import { InputField } from '../Common/InputField';
 import Image from 'next/image';
-import LOGO from "../../assets/Logo.png"
+import LOGO from "../../assets/Footer_logo.png"
 
 const Footer = () => {
   return (
