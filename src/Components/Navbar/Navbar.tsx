@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { Button } from '../Common/Btn';
+import { Button } from '../ui/button';
 import { LuMenuSquare } from "react-icons/lu";
 import { RxCross2 } from "react-icons/rx";
 import Image from 'next/image';
