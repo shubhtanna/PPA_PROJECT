@@ -5,7 +5,7 @@ import CarouselPart from '@/Components/Carousle/Carousle';
 import ClientSection from '@/Components/ClientSection/ClientSection';
 import CommunitySection from '@/Components/CommunitySection/Community';
 import DemoSection from '@/Components/DemoSection/Demo';
-
+import MarketingSection from '@/Components/MarketingSection/Market';
 
 const Home: React.FC = () => {
   return (
@@ -14,6 +14,7 @@ const Home: React.FC = () => {
       <ClientSection/>
       <CommunitySection/>
       <CounterPage/>
+      <MarketingSection/>
       <DemoSection/>
     </div>
   );
