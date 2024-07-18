@@ -8,9 +8,9 @@ const CommunitySection = () => {
     return (
         <div className='py-10'>
 
-            <Topheading heading='Manage your entire community in a single system' para='Who is Nextcent suitable for?'/>
+            <Topheading heading='Manage your entire community in a single system' para='Who is Nextcent suitable for?' />
 
-            <section className='flex justify-center gap-32 items-center text-center py-10 flex-wrap'>
+            <section className='flex justify-center gap-8 lg:gap-32 items-center text-center py-10 flex-wrap'>
                 <div className='flex flex-col justify-center items-center gap-2 max-w-[230px]'>
                     <Image src={COMMUNITY} alt='community_icon' />
                     <h2 className='text-[#4D4D4D] text-[28px] font-bold'>Membership Organisations</h2>

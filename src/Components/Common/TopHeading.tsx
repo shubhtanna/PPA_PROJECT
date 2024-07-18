@@ -10,11 +10,10 @@ const Topheading: React.FC<HeadersProps> = ({
     para
 }) => {
     return (
-        <header className="flex flex-col justify-center items-center gap-2">
-            <h2 className="font-semibold text-4xl text-[#4D4D4D] w-[35%] text-center">{heading}</h2>
-
-            <p className="font-normal text-base text-[#717171] w-[50%] text-center">{para}</p>
-        </header>
+        <div className="text-center my-8 flex flex-col items-center w-full">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 w-full lg:w-2/3">{heading}</h1>
+            <p className="text-base md:text-lg lg:text-xl text-gray-600 mt-4 w-full lg:w-2/3">{para}</p>
+        </div>
     )
 }
 
