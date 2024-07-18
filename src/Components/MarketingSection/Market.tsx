@@ -4,7 +4,9 @@ import IMG3 from '../../assets/Marketing_img3.png'
 import Topheading from "../Common/TopHeading";
 import MarketingCard from "../Common/MarketingCard";
 
+
 const MarketingSection = () => {
+    
     return (
         <div className="w-full lg:w-10/12 mx-auto my-12">
 

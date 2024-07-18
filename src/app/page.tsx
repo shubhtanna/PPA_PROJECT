@@ -1,5 +1,6 @@
-import React from 'react';
+"use client"
 
+import React from 'react';
 import CounterPage from '@/Components/CounterPart/CounterPage';
 import CarouselPart from '@/Components/Carousle/Carousle';
 import ClientSection from '@/Components/ClientSection/ClientSection';
@@ -10,10 +11,15 @@ import CustomerSection from '@/Components/CustomerSection/CustomerSection';
 import LearnSection from '@/Components/LearnSection/LearnSection';
 import LOGIN from "../assets/Login_img.png"
 import MOBILE from "../assets/mobile_img.png"
+import modeStore from '@/stores/modeStore';
+import Navbar from "@/Components/Navbar/Navbar";
+import Footer from "@/Components/Footer/Footer";
 
 const Home: React.FC = () => {
+  const {mode} = modeStore((state) => ({mode:state.mode}));
   return (
-    <div className="">
+    <div className={`${mode === "dark" ? "bg-black" : "bg-white"}`}>
+      <Navbar/>
       <CarouselPart/>
       <ClientSection/>
       <CommunitySection/>
@@ -25,6 +31,7 @@ const Home: React.FC = () => {
       <CustomerSection/>
       <MarketingSection/>
       <DemoSection/>
+      <Footer/>
     </div>
   );
 };
